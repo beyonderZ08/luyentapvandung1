@@ -3,7 +3,8 @@ $weight = 70;
 $height = 1.75;
 $bmi = $weight / ($height * $height);
 
-echo "Chỉ số BMI là: $bmi<br>";
+// Làm tròn chỉ số BMI đến 2 chữ số thập phân
+echo "Chỉ số BMI là: " . round($bmi, 2) . "<br>";
 
 if ($bmi < 18.5) {
     echo "Thiếu cân<br>";
